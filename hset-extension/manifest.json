@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "HSet Link Extension",
+  "version": "1.0",
+  "description": "Shows full link sets in a bubble and copies them on click.",
+  "permissions": ["clipboardWrite"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
